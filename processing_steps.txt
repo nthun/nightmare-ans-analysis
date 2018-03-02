@@ -1,0 +1,16 @@
+0. Manually remove "<Paused>", and replace "Light Trigger" in `26_B_emot_SCR.txt`, `26_recall_SCR.txt`, `37_B_emot_SCR.txt`, `37_recall_SCR.txt`files, respectively.
+
+1. Run `marker_artefact_removal.R` R script to spot duplicated markers, and delete the surplus
+2. Run batch processing in Matlab:
+	Ledalab('d:\Documents\GitHub\own projects\EDA process\data\clean\', 'open', 'text', 'downsample', 2, 'analyze','CDA', 'optimize',2, 'export_era', [1 4 .01 2])
+3. Run R script to summarise results
+
+Errors in xlsx files:
+NaN-s in number col
+
+1 D:/Documents/GitHub/own projects/EDA process/data/xlsx/02_recall_B_teszt_excel.xlsx 02_recall_B
+2        D:/Documents/GitHub/own projects/EDA process/data/xlsx/20_A_teszt_excel.xlsx        20_A
+3 D:/Documents/GitHub/own projects/EDA process/data/xlsx/26_recall_B_teszt_excel.xlsx 26_recall_B
+4        D:/Documents/GitHub/own projects/EDA process/data/xlsx/29_B_teszt_excel.xlsx        29_B
+5        D:/Documents/GitHub/own projects/EDA process/data/xlsx/33_B_teszt_excel.xlsx        33_B
+6        D:/Documents/GitHub/own projects/EDA process/data/xlsx/34_A_teszt_excel.xlsx        34_A
